@@ -1,35 +1,48 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="Descripcion" content="Blog">
-	<meta name="keywords" content="Mexico,Tokyo,Londres,Paris">
-	<! cuidado con el tiempo de recarga
-	<meta http-equiv="refresh" content="20;URL=./1¿1DivSemanticaEstilos.htm">
-
-<title> Ejemplo de Galeria</title>
-<link rel="stylesheet" href="css/estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTUDIANTES</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-<div class="Contenedor">
-<header>
-<h1>Galeria de ciudades </h1>
-</header>
+    <form method="post" action="segundo.php">
+        <label for="txtNombre">Nombre:</label>
+        <input type="text" id="txtNombre" name="txtNombre"autofocus required/> <br/><br><br>
 
-<nav>
-<ul>
-	<li><a href="Mexico.html">M&eacute;xico</a></li>
-	<li><a href="paris.html">Paris</a></li>
-	<li><a href="tokyo.html">Tokyo</a></li>
-	<li><a href="londres.html">Londres</a></li>
-</ul>
-</nav>
-<section>
-<article>
-<h1 aling="center"><span style="color:red">Blog de cuidades</span></h1>
-<p>Galería de ciudades hecho por Froys</p>
-</article>
-</section>
-<footer>Copyright &copy; itorizaba.edu.mx</footer>
-</div>
+        <label for="txtEdad">Edad:</label>
+        <input type="text" id="txtEdad" name="txtEdad"autofocus required/> <br/><br><br>
+
+        <label for="radio">Sexo:</label><br>
+        <input type="radio" id="radio" name="txtRadio"autofocus required/>Masculino <br/>
+        <input type="radio" id="radio" name="txtRadio"autofocus required/>Femenino <br/><br><br>
+
+        <label for="txtCorreo">Correo</label>
+        <input type="email" id="txtCorreo" name="txtCorreo"><br/><br><br>
+
+        <label for="txtCel">Celular:</label>
+        <input type="text" id="txtCel" name="txtCel" pattern="\d{10}">	<br><br>
+
+        <label for="txtNum">Semestre:</label>
+        <input type="number" id="txtNum" name="txtNum" min="1" max="12"/> <br/><br><br>
+
+
+        <label for="txtCURP">CURP:</label>
+        <input type="text" id="txtCURP" name="txtCURP" pattern="[A-Z]{4}\d{6}[A-Z]{6}\d{2}"><br><br>
+
+
+        <label for="txtOpc">Tipo:</label>
+        <input list="1Opciones" id="txtOpc" name="txtOpc1"><br>
+        <datalist id="1Opciones">
+            <option value="Ordinario"></option>
+            <option value="Repite"></option>
+            <option value="Especial"></option>
+   
+        </datalist>
+        <input type="submit" value="Enviar">
+
+
+    
 </body>
 </html>
